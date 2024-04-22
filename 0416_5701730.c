@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+//후위식 계산 프로그램
 #define MAX_STACK_SIZE 10
 
 typedef int element;
@@ -52,7 +52,7 @@ element peek(StackType* sptr) {
     }
     return sptr->data[sptr->top];
 }
-
+//계산
 int eval(char expr[]) {
     int len;
     StackType s;
